@@ -22,7 +22,7 @@ function ShowBookDetails(props) {
 
   const onDeleteClick = (id) => {
     axios
-      .delete(`http://localhost:8082/api/books/${id}`)
+      .delete(`https://mern-a-to-z.vercel.app/api/books`)
       .then((res) => {
         navigate('/');
       })
